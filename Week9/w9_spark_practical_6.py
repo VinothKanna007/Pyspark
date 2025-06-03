@@ -6,7 +6,7 @@ os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 
-# Usecase 1 -  Find Top 10 customers who spent max amount
+# Usecase 3 - Find avg number of connections per age
 
 sc = SparkContext("local[*]", "Spark practical 6")
 sc.setLogLevel("ERROR")
