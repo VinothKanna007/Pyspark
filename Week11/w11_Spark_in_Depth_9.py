@@ -7,7 +7,11 @@ os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 
-# Usecase 1 -  Find Top 10 customers who spent max amount
+# Find Top Movies:
+
+# Rules are:
+# Atleast 1000 peoples should have rated
+# avg rating should be >4.5
 
 sc = SparkContext("local[*]", "w11_Spark_in_Depth_9 ")
 sc.setLogLevel("ERROR")
