@@ -6,8 +6,7 @@ import sys
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
-
-# Usecase 1 -  Find Top 10 customers who spent max amount
+# Cache and persist StorageLevels
 
 sc = SparkContext("local[*]", "w11_Spark_in_Depth_7 ")
 sc.setLogLevel("ERROR")
