@@ -10,7 +10,7 @@ from pyspark.sql.types import IntegerType, StructField, TimestampType, StringTyp
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
-# Explicit Scema
+# Explicit Schema
 # 1. Programatically
 # 2. DDL
 
