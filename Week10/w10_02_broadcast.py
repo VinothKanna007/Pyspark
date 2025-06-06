@@ -5,6 +5,8 @@ import sys
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
+# Broadcast -> Possile If One Small Table & One Big Table
+
 sc = SparkContext("local[*]", "w10_01_broadcast")
 sc.setLogLevel("ERROR")
 
