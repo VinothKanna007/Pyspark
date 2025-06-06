@@ -6,6 +6,8 @@ import sys
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
+# Accumulators - Like a Counters
+
 sc = SparkContext("local[*]", "w10_03_accumulators")
 sc.setLogLevel("ERROR")
 
