@@ -6,6 +6,8 @@ import sys
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
+# parallelize - For Experimentation
+
 sc = SparkContext("local[*]", "w10_Spark_in_Depth_1")
 sc.setLogLevel("ERROR")
 
