@@ -10,6 +10,9 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# 1. Simple Agg
+# 2. Grouping Agg
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
