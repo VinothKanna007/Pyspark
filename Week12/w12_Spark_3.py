@@ -10,6 +10,9 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# Why Low Level RDD Still Exist ?
+# Example: To handle Unstructured data
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
