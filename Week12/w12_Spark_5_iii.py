@@ -44,7 +44,7 @@ invoice_df = (spark.read.
 invoice_df2 = invoice_df.toDF("Country", "weeknum", "numinvoices", "tot_quantity", "Invoicevalue")
 
 # My Window
-my_window = Window.partitionBy("Country").orderBy("weeknum")\
+my_window = Window.partitionBy("Country").orderBy("weeknum")\  # orderBy(desc("weeknum"))
     .rowsBetween(Window.unboundedPreceding, Window.currentRow)
 
 my_df = invoice_df2.withColumn("run_sum", sum("Invoicevalue")\
