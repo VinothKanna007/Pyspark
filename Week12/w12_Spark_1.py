@@ -7,6 +7,11 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# 1. SaveModes
+# 2. Repartition
+# 3. PartitionBy
+# 4. maxRecordsPerFile
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
