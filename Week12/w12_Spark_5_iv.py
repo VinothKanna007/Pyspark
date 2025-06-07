@@ -14,6 +14,13 @@ from pyspark.sql.types import IntegerType, StructField, TimestampType, StringTyp
 # 1  Simple Join (Shuffle Sort Merge Join)
 # 2. Broadcast join
 
+# Column Ambiguity
+  #  Before Join, WithColumn Renamed
+  #  After join, drop col
+
+# How to handle Nulls
+  # SampleCode: df.withColumn("new_column_name", expr("coalesce(order_status, -1)"))
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
