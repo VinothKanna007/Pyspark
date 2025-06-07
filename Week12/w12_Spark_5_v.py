@@ -43,7 +43,7 @@ columns = ["January", "February", "March", "April", "May", "June", "July", "Augu
 
 final_df = spark.sql("""select level,
              date_format(datetime, 'MMMM') as month,
-             cast(first(date_format(datetime, 'MM'))as int) as month_num
+             cast(date_format(datetime, 'M') as int) as month_num
              from log""").groupBy("level").pivot("month", columns).count()\
 .withColumn("Total",expr("January+ February+ March+ April+ May+ June+ July+ August+ September+ October+ November+ December"))
 
