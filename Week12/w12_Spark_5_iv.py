@@ -10,6 +10,10 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# 2 Types of Join
+# 1  Simple Join (Shuffle Sort Merge Join)
+# 2. Broadcast join
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
