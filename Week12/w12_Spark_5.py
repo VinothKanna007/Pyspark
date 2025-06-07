@@ -10,6 +10,14 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# 1. List to DF
+# 2. Column Names using toDF()
+# 3. monotonically_increasing_id
+# 4. Convert to Timestamp  https://www.unixtimestamp.com/
+# 5. dropDuplicates
+# 6. drop
+# 7. sort
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
