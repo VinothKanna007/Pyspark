@@ -10,6 +10,9 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# Usecase
+# Agg & pivot
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
