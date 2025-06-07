@@ -7,6 +7,12 @@ import sys
 
 from pyspark.sql.types import IntegerType, StructField, TimestampType, StringType
 
+# 1. Spark SQL
+# 2. Store in Form of Table
+# 3. enableHiveSupport()
+# 4. bucketBy + sortBy
+
+
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
