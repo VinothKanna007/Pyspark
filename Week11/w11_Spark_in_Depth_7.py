@@ -14,7 +14,7 @@ input = sc.textFile("/Users/Vinoth/Desktop/Old_Files/shared1/Week9_Spark/custome
 
 rdd2 = input.map(lambda x: (x.split(",")[0], float(x.split(",")[2])))
 
-final = rdd2.reduceByKey(lambda x, y: (x + y)).filter(lambda x: x[1]>5000).map(lambda x: (x[0], x[1]*2)).persist(StorageLevel.MEMORY_AND_DISK)
+final = rdd2.reduceByKey(lambda x, y: (x + y)).filter(lambda x: x[1]>5000).map(lambda x: (x[0], x[1]*2)).persist(StorageLevel.MEMORY_ONLY)
 
 print("Total cnt" + str(final.count()))
 
